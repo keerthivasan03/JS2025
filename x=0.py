@@ -1,10 +1,10 @@
-'''x=4
+x=4
 while x<5:
     print("Not there "+str(x))
     x=x+1
 print("x=" + str(x))
 
-
+'''
 def fn(x):
     n=-9
     while n <= x:
@@ -97,5 +97,14 @@ def assign_number(to_Add):
         print(str(counting) ,"+", str(to_Add), "=" ,str(my_num))
         counting+=1
 assign_number(17)
+
+sum=0
+for x in range(1,11):
+    if x%2==0:
+        print(x,"Even number")
+        sum+=x
+print(sum)
+
+
     
     
