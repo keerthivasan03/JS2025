@@ -1,4 +1,4 @@
-#csv file check 123 456git
+
 import csv
 csv_l="C:\\Users\\keerthivasan.a\\Downloads\\contact_info.csv"
 csv_c="C:\\Users\\keerthivasan.a\\OneDrive - Protiviti Member Firm\\Desktop\\Sprint 27\\8743.csv"
