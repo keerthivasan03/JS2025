@@ -97,7 +97,7 @@ def assign_number(to_Add):
         print(str(counting) ,"+", str(to_Add), "=" ,str(my_num))
         counting+=1
 assign_number(17)
-#sum of even numbers git check
+#sum of even numbers git check blah blah
 sum=0
 for x in range(1,11):
     if x%2==0:
