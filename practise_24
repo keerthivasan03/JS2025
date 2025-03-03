@@ -1,0 +1,6 @@
+#multiplicaiton program
+multiplication=8
+for x in range(1,multiplication+1):
+  result=x*multiplication
+  print(x,"+",multiplication,"=", result)
+
