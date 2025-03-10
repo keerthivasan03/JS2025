@@ -1,6 +1,7 @@
 import csv
+import os
 
-file_path = "C:\\Users\\keerthivasan.a\\user_emails_1.csv"
+file_path = "C:\\Users\\keerthivasan.a\\python programming\\user_emails_w.csv"
 
 # Use a comma as the delimiter
 csv.register_dialect("CustomDialect", delimiter=",", quotechar='"', strict=False, skipinitialspace=True)
@@ -15,7 +16,9 @@ with open(file_path, "a", newline='') as write_file:
     
     # Write header only if file is empty
     write_file.seek(0)
-    if write_file.tell() == 0:
+    #if write_file.tell() == 0:
+    if os.stat(file_path)==0:
+    
         writer.writeheader()
     
     # Append new data
