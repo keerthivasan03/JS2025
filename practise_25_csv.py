@@ -103,6 +103,37 @@ writing()
 append()
 reading()
 delete()
+#write with many rows
+import csv
+import os
+print(os.path.exists("C:\\Users\\keerthivasan.a\\python programming\\syslog.log"))
+filepath="C:\\Users\\keerthivasan.a\\python programming\\practise_write.csv"
+csv.register_dialect("Write",delimiter=",",skipinitialspace=True)
+with open(filepath,"w",newline="") as writer_file:
+    header = ['Full Name', 'Email Address']
+    data = [{'Full Name': 'Blossom Gill', 'Email Address': 'blossom@abc.edu'},
+{'Full Name': 'Hayes Delgado', 'Email Address': 'nonummy@utnisia.com'},
+{'Full Name': 'Petra Jones', 'Email Address': 'ac@abc.edu'},
+{'Full Name': 'Oleg Noel', 'Email Address': 'noel@liberomauris.ca'},
+{'Full Name': 'Ahmed Miller', 'Email Address': 'ahmed.miller@nequenonquam.co.uk'},
+{'Full Name': 'Macaulay Douglas', 'Email Address': 'mdouglas@abc.edu'},
+{'Full Name': 'Aurora Grant', 'Email Address': 'enim.non@abc.edu'},
+{'Full Name': 'Madison Mcintosh', 'Email Address': 'mcintosh@nisiaenean.net'},
+{'Full Name': 'Montana Powell', 'Email Address': 'montanap@semmagna.org'},
+{'Full Name': 'Rogan Robinson', 'Email Address': 'rr.robinson@abc.edu'},
+{'Full Name': 'Simon Rivera', 'Email Address': 'sri@abc.edu'},
+{'Full Name': 'Benedict Pacheco', 'Email Address': 'bpacheco@abc.edu'},
+{'Full Name': 'Maisie Hendrix', 'Email Address': 'mai.hendrix@abc.edu'},
+{'Full Name': 'Xaviera Gould', 'Email Address': 'xlg@utnisia.net'},
+{'Full Name': 'Oren Rollins', 'Email Address': 'oren@semmagna.com'},
+{'Full Name': 'Flavia Santiago', 'Email Address': 'flavia@utnisia.net'},
+{'Full Name': 'Jackson Owens', 'Email Address': 'jackowens@abc.edu'},
+{'Full Name': 'Britanni Humphrey', 'Email Address': 'britanni@ut.net'},
+{'Full Name': 'Kirk Nixon', 'Email Address': 'kirknixon@abc.edu'},
+{'Full Name': 'Bree Campbell', 'Email Address': 'breee@utnisia.net'}]
+    writer_files=csv.DictWriter(writer_file, dialect="Write",fieldnames=header)
+    writer_files.writeheader()
+    writer_files.writerows(data)
 #Random function testing
 import random
 def participants(name):
@@ -120,3 +151,11 @@ def participants(name):
             return None
 name=["Keerthi","anu","isai"]
 print(participants(name))
+#operator
+import operator
+fruit = {"oranges": 3, "apples": 5, "bananas": 7, "pears": 2}
+#print(sorted(fruit.items(),key=operator.itemgetter(0))) #print(sorted(fruit.items()))
+# print(sorted(fruit.items(),key=operator.itemgetter(1)))
+#print(sorted(fruit.items(),key=operator.itemgetter(0),reverse=True))
+print(sorted(fruit.items(),key=operator.itemgetter(1),reverse=True))
+
