@@ -39,6 +39,7 @@ def log(text):
 print(log("July 31 07:51:48 mycomputer bad_process{12345}: ERROR {1211} Performing package upgrade"))
 #7
 def ff(text):
+    #reg=r"\[([\w+|\d+]{4,6})\]"
     reg=r"\[(\w+|\d+)\]" # either match string or numerical
     final=re.findall(reg,text)
     return final
