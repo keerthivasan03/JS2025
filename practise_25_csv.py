@@ -67,6 +67,7 @@ with open(fileq,"a",newline="") as no_header:
         header.writeheader()
     header.writerows(datas)
 print("data successfully uploaded")
+#instead of above use code in 27 csv
 #excel
 from openpyxl import load_workbook, Workbook
 filepath="C:\\Users\\keerthivasan.a\\python programming\\own_Excel1.xlsx"
@@ -158,4 +159,8 @@ fruit = {"oranges": 3, "apples": 5, "bananas": 7, "pears": 2}
 # print(sorted(fruit.items(),key=operator.itemgetter(1)))
 #print(sorted(fruit.items(),key=operator.itemgetter(0),reverse=True))
 print(sorted(fruit.items(),key=operator.itemgetter(1),reverse=True))
+#fruit.items() returns a list of key-value pairs (tuples) from the dictionary.
 
+#operator.itemgetter(1) sorts by the second element of each tuple (i.e., the value).
+
+#everse=True sorts in descending order.
