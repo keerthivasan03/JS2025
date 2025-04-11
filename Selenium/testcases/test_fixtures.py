@@ -21,7 +21,7 @@ def get_driver():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=chrome_options)
     driver.maximize_window()
     yield driver  # Provide the driver to the test
-    #driver.quit()  # Close the browser after test execution
+    driver.quit()  # Close the browser after test execution
 
 def test_example(get_driver):  # Fixture ensures driver initialization
     get_driver.get("https://www.google.com/")

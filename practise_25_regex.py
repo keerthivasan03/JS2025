@@ -145,4 +145,26 @@ def code_regex(words):
     return result
 print(code_regex("The Rambunctious, childern had to sit quietly to enjoy their delicious foodsa keerthi"))
 
+List1 = [{'emp': 'John', 'dept no.': 12}, {'emp': 'Adam', 'dept no.': 5}]
+for record in List1:
+    output = []
+    for key, value in record.items():
+        output.append(f"{key} is {value}")
+    print(" and ".join(output))
+
+List1 = [{'emp': 'John', 'dept no.': 12}, [{'emp': 'Adam', 'dept no.': 5}]]
+
+for record in List1:
+    if isinstance(record, dict):
+        output = []
+        for key, value in record.items():
+            output.append(f"{key} is {value}")
+        print(" and ".join(output))
+    elif isinstance(record, list):
+        for subrecord in record:
+            output = []
+            for key, value in subrecord.items():
+                output.append(f"{key} is {value}")
+            print(" and ".join(output))
+
 

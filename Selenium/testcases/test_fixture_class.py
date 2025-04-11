@@ -27,3 +27,4 @@ class TestBrowser:
     def test_bing(self):
         self.driver.get("https://www.bing.com")
         print("Opened Bing")
+

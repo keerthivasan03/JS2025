@@ -286,7 +286,8 @@ print(finals)
 word_place1="Jacki sherrif was a great 1989 2000"
 words_spliy=word_place1.split()
 outputs=[]
-for i,x in enumerate(words_spliy):
+#for i,x in enumerate(words_spliy):
+for x in words_spliy:
     outputs.append(x)
     if x.isdigit():
         if x=="1989":
@@ -298,7 +299,8 @@ print(outputs)
 word_place2="Jacki sherrif was a great 1989 2000"
 words_spliy1=word_place2.split()
 outputs1=[]
-for i,x in enumerate(words_spliy1):
+#for i,x in enumerate(words_spliy1):
+for x in words_spliy1:
     outputs1.append(x)
     if x.isalpha():
         if x=="Jacki":
@@ -360,6 +362,7 @@ list_of_name = ["Parker", "Drew", "Cameron", "Logan", "Alex", "Chris", "Terry", 
 print(liner(list_of_name,"Terry"))
 print(binar(list_of_name,"Cameron"))
 print(binar(list_of_name,"Keerthi"))
+ 
 
 
 
